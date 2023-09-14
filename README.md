@@ -27,23 +27,24 @@ Follow these steps to run the test case:
 
    ```bash
    mvn clean test
+
 src
 ├── main
-│   ├── java
-│   │   ├── runner
-│   │   │   └── TestRunner.java
-│   │   ├── screenHelper
-│   │   │   ├── NewsWebSiteScreenHelper.java
-│   │   │   └── SearchEngineScreenHelper.java
-│   │   ├── stepDefinitions
-│   │   │   └── newValidationStepsDefinition.java
-│   │   └── util
-│   │       ├── ExtentManager.java
-│   │       ├── LocatorReader.java
-│   │       ├── PropertyReader.java
-│   │       ├── ReusableComponent.java
-│   ├── resources
-│   │   ├── features
-│   │   │   └── BusinessScenarios.feature
-│   │   ├── application.properties
-│   │   └── web_locator.xml
+│ ├── java
+│ │ ├── runner
+│ │ │ └── TestRunner.java
+│ │ ├── screenHelper
+│ │ │ ├── NewsWebSiteScreenHelper.java
+│ │ │ └── SearchEngineScreenHelper.java
+│ │ ├── stepDefinitions
+│ │ │ └── newValidationStepsDefinition.java
+│ │ └── util
+│ │ ├── ExtentManager.java
+│ │ ├── LocatorReader.java
+│ │ ├── PropertyReader.java
+│ │ ├── ReusableComponent.java
+│ ├── resources
+│ │ ├── features
+│ │ │ └── BusinessScenarios.feature
+│ │ ├── application.properties
+│ │ └── web_locator.xml
