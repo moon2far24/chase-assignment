@@ -20,6 +20,18 @@ jobs:
         java-version: 8
         distribution: 'adopt'
 
+    - name: Install Chrome and ChromeDriver
+      run: |
+        CHROME_VERSION="117.0.5938.62"  # Replace with the desired Chrome version
+        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo dpkg -i google-chrome-stable_current_amd64.deb
+        sudo apt-get -f install
+        CHROME_DRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+        wget "https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip"
+        unzip chromedriver_linux64.zip
+        chmod +x chromedriver
+        sudo mv chromedriver /usr/local/bin/
+
     - name: Build with Maven
       run: mvn clean install
 
