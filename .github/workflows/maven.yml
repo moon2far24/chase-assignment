@@ -22,7 +22,7 @@ jobs:
 
     - name: Install Chrome and ChromeDriver
       run: |
-        CHROME_VERSION="117.0.5938.62"  # Replace with the desired Chrome version
+        CHROME_VERSION="117.0.5938.63"  # Replace with the desired Chrome version
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         sudo dpkg -i google-chrome-stable_current_amd64.deb
         sudo apt-get -f install
