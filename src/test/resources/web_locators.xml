@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Locators>
+
+    <!--
+
+			please use below keywords to determine locators for native view:
+    		By.id = 'id='
+    		By.xpath = '//'
+    		By.className = 'class='
+    		By.name = 'name='
+    -->
+
+    <HandleCookiePopup>
+        <CookieFrame><![CDATA[id=sp_message_iframe_859185]]></CookieFrame>
+        <AcceptCookiesButton><![CDATA[//button[@title='Yes, I’m happy']]]></AcceptCookiesButton>
+    </HandleCookiePopup>
+
+    <NewAritcles>
+        <FirstNewsArticle1><![CDATA[//div[@data-title=']]></FirstNewsArticle1>
+        <FirstNewsArticle2><![CDATA[']/child::div/child::ul/child::li]]></FirstNewsArticle2>
+        <NewsArticleText><![CDATA[//span[@class='u-faux-block-link__cta fc-item__headline']]]></NewsArticleText>
+        <NewsArticleClickableLink><![CDATA[//a[@data-link-name='article']]]></NewsArticleClickableLink>
+        <NewsArticleHeadlineTextInDetailPage><![CDATA[//div[contains(@class,'dcr-')]//h1]]></NewsArticleHeadlineTextInDetailPage>
+
+    </NewAritcles>
+
+    <GoogleLocators>
+        <SearchInputBox><![CDATA[name=q]]></SearchInputBox>
+        <NewsParentBlockList><![CDATA[//div[@class='MjjYud']]]></NewsParentBlockList>
+        <NewsDomainNameList><![CDATA[//span[@class='VuuXrf']]]></NewsDomainNameList>
+        <NewsDomainURLList><![CDATA[//div[@class='byrV5b']]]></NewsDomainURLList>
+        <NewsHeadLineList><![CDATA[//h3[@class='LC20lb MBeuO DKV0Md']]]></NewsHeadLineList>
+
+    </GoogleLocators>
+
+
+</Locators>
